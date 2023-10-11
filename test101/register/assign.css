@@ -1,0 +1,61 @@
+/* Styles for the form container */
+.form-container {
+    background-color: #1b428a;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto; /* Center the container horizontally */
+    width: 400px; /* Increase the width */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    color: rgb(115, 193, 212); /* Text color */
+    font-family: Arial, sans-serif; /* Font family */
+}
+
+/* Additional styling for form elements (customize as needed) */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #4da7f1;
+    border-radius: 5px;
+
+}
+/* Style the button container */
+.button-container {
+    display: inline-block; /* Ensures the container only takes the necessary width */
+    margin: 10px; /* Adjust this margin as needed */
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #3498db; /* Change this color to your desired button color */
+    color: #ffffff; /* Text color for the button */
+    width: 80%;
+    padding: 14px 10px; /* Adjust padding as needed */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    border-radius: 4px; /* Rounded corners for the button */
+    text-align: center; 
+}
+
+/* Hover effect */
+input[type="submit"]:hover {
+    background-color: #88bde2; /* Change this color to your desired hover color */
+}
+
+/* Add any other styles you need for your form elements */
+.right-image-container {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    height: 100%; /* Ensure the container takes up the full height */
+}
+
+.right-image {
+    max-width: 5%; /* Set a maximum width for the image */
+    height: auto; /* Allow the image's height to adjust */
+}
+
+/* You can also add media queries for responsive design if necessary */
