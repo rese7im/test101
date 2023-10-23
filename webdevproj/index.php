@@ -42,23 +42,44 @@ if (isset($_POST['login'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <style>
-        /* Add your CSS styles here */
+        /* Inline CSS styles */
+        body {
+            background-color: #007bff; /* Blue background for the entire page */
+            color: white; /* White text color for the entire page */
+        }
+
         .center-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* This centers the form vertically on the page */
+            min-height: 70vh; /* Adjusted height for the centering effect */
         }
 
         .login-container {
             text-align: center;
-        }
-
-        form {
-            background-color: #f0f0f0;
+            background-color: #b19cd9; /* Slightly transparent white background for the form */
             border-radius: 5px;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            background-color: transparent; /* Transparent background for the form */
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            background-color: #f0f0f0; /* Background color for input fields */
+            color: black; /* Text color for input fields */
+        }
+
+        button {
+            background-color: black; /* Black button background color */
+            color: white; /* Button text color */
+        }
+
+        .register-button {
+            color: white; /* black color for the registration link */
         }
     </style>
 </head>
@@ -67,7 +88,7 @@ if (isset($_POST['login'])) {
     <div class="login-container">
         
         <form action="index.php" method="POST">
-        <h1>LOGIN</h1>
+            <h1>LOGIN</h1>
             <!-- Input field for email -->
             <input type="email" name="email" placeholder="Email" required autofocus>
             <br>
